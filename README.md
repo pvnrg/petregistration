@@ -103,7 +103,7 @@ URL: http://localhost:8000/pet/new
 ![Create Form](docs/form.png)
 
 ## Summary Page
-URL: 
+URL: http://localhost:8000/pet/{id}
 ![Summary Page](/docs/summary.png)
 
 ## docker containers
