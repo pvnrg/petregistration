@@ -50,7 +50,7 @@ docker-compose up --build
 
 ## after successfully run this command you can see two container up and running as below screenshot
 
-![List View](/public/screenshots/docker.png)
+![Docker](public/screenshots/docker.png)
 
 ## create .env if it is not there
 
