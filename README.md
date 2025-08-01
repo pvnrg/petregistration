@@ -34,6 +34,7 @@ This is a Symfony-based Pet Owner Registration application built for the full-st
 
 ### 📂 Clone the repository
 
+
 ```bash
 git clone https://github.com/pvnrg/petregistration.git
 cd petregistration
@@ -45,16 +46,10 @@ cd petregistration
 
 ## Setup
 
-```bash
 docker-compose up --build
-
-## after successfully run this command you can see two container up and running as below screenshot
-
-![Docker](public/screenshots/docker.png)
 
 ## create .env if it is not there
 
-```bash
 cp .env .env.local
 
 ## For MySQL
@@ -63,7 +58,6 @@ DATABASE_URL="mysql://username:password@127.0.0.1:3306/petdb?serverVersion=8.0"
 
 ## Install dependancies
 
-```bash
 composer install
 
 ## run below command for database setup
@@ -74,10 +68,9 @@ php bin/console doctrine:migrations:migrate
 
 ## to run the server run below command:
 
-```bash
 symfony server:start
 
-
+```
 ## Project Structure:
 src/
 ├── Controller/
@@ -102,14 +95,16 @@ tests/
 
 ## Some Screenshot of project
 ## Listing Of Records
-URL: 
-![List View](/public/screenshots/list.png)
+URL: http://localhost:8000/pets
+![List View](docs/list.png)
 
 ## Create Record Form
-URL: 
-![List View](/public/screenshots/create.png)
+URL: http://localhost:8000/pet/new
+![Create Form](docs/form.png)
 
 ## Summary Page
 URL: 
-![List View](/public/screenshots/summary.png)
+![Summary Page](/docs/summary.png)
 
+## docker containers
+![Docker](docs/docker.png)
