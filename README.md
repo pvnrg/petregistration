@@ -91,7 +91,7 @@ templates/
 ```
 
 
-## Some Screenshot of project
+## Some Screenshots of project
 ## Listing Of Records
 URL: http://localhost:8000/pets
 ![List View](docs/list.png)
