@@ -82,16 +82,11 @@ src/
 │   └── PetType.php
 ├── Repository/
 │   └── PetRepository.php
-├── DataFixtures/
-│   └── AppFixtures.php
 templates/
 ├── pet/
 │   ├── index.html.twig
 │   ├── new.html.twig
 │   └── summary.html.twig
-tests/
-├── Entity/
-│   └── PetTest.php
 
 ```
 
