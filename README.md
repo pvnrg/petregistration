@@ -62,13 +62,14 @@ composer install
 
 ## run below command for database setup
 
-```bash
 php bin/console doctrine:database:create
 php bin/console doctrine:migrations:migrate
 
 ## to run the server run below command:
 
 symfony server:start
+
+```
 
 ```
 ## Project Structure:
@@ -91,6 +92,8 @@ templates/
 tests/
 ├── Entity/
 │   └── PetTest.php
+
+```
 
 
 ## Some Screenshot of project
