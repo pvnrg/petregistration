@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container mx-auto p-6">
+        <h1 class="text-xl font-bold mb-4">Pet Summary</h1>
+        <ul>
+            <li><strong>Name:</strong> {{ pet.name }}</li>
+            <li><strong>Type:</strong> {{ pet.type }}</li>
+            <li><strong>Breed:</strong> {{ pet.breed }}</li>
+            <li><strong>Sex:</strong> {{ pet.sex }}</li>
+            <li><strong>Date of Birth:</strong> {{ pet.dateOfBirth ? pet.dateOfBirth|date('Y-m-d') : 'Unknown' }}</li>
+            <li><strong>Dangerous Animal:</strong> {{ pet.isDangerousAnimal ? 'Yes' : 'No' }}</li>
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,87 @@
+/* Base form container */
+.pet-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form titles and labels */
+.pet-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.pet-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* Inputs, selects, and date fields */
+.pet-form input[type="text"],
+.pet-form input[type="date"],
+.pet-form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+}
+
+.pet-form input[type="text"]:focus,
+.pet-form input[type="date"]:focus,
+.pet-form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Radio buttons and checkboxes */
+.pet-form .radio-group {
+    margin-bottom: 20px;
+}
+
+.pet-form .radio-group label {
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.pet-form input[type="radio"] {
+    margin-right: 6px;
+}
+
+/* Danger notice */
+.pet-form .danger-notice {
+    background-color: #ffe5e5;
+    color: #a80000;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: -12px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Submit button */
+.pet-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.pet-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}

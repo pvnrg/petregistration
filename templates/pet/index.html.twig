@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}All Pets{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Pet List</h2>
+        <a href="{{ path('pet_new') }}" class="btn btn-success">Add New Pet</a>
+    </div>
+
+    {% if pets is empty %}
+        <p>No pets registered yet.</p>
+    {% else %}
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Breed</th>
+                <th>Dangerous?</th>
+                <th>Date of Birth</th>
+                <th>Sex</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pet in pets %}
+            <tr>
+                <td>{{ pet.name }}</td>
+                <td>{{ pet.type }}</td>
+                <td>{{ pet.breed }}</td>
+                <td>
+                    {% if pet.isDangerousAnimal %}
+                        <span class="text-danger fw-bold">Yes</span>
+                    {% else %}
+                        No
+                    {% endif %}
+                </td>
+                <td>{{ pet.dateOfBirth ? pet.dateOfBirth|date('Y-m-d') : 'Unknown' }}</td>
+                <td>{{ pet.sex }}</td>
+                <td>
+                    <form method="post" action="{{ path('pet_delete', {id: pet.id}) }}" onsubmit="return confirm('Are you sure?');">
+                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</div>
+{% endblock %}
